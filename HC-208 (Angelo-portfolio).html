@@ -1,0 +1,749 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+  <meta charset=utf-8">
+  <meta name="generator" content="PSPad editor, www.pspad.com">
+  <title>Angelo-portfolio</title>
+  
+  <style type="text/css">
+  * {margin:0;
+    padding:0;
+    -webkit-box-sizing:border-box;
+            box-sizing:border-box;
+    list-style-type:none;}
+    
+  html, body {height:100%}
+  
+  body {background-color:#e3e8ca;}
+  
+  div {display:block;
+      position:relative;}
+      
+  
+  
+  /* Создаем структуру страницы (прижимаем футер к низу) */
+  
+  div.content {min-height:100%;
+              margin-bottom:-250px;
+              border:0px double silver;}
+              
+  div.content:after {content:'';
+                      display:block;
+                      position:relative;
+                      height:250px;
+                      border:0px solid black;}
+                      
+  div.footer {height:250px;
+              }
+              
+              
+              
+  
+  /* Создаем header - шапку сайта */
+  
+  div.header {height:240px;
+              border:1px solid #E3E8CA;
+              background:-webkit-gradient(linear, left top, left bottom, from(#afc4b8), to(#e3e8ca));
+              background:-webkit-linear-gradient(top, #afc4b8, #e3e8ca);
+              background:-o-linear-gradient(top, #afc4b8, #e3e8ca);
+              background:linear-gradient(to bottom, #afc4b8, #e3e8ca);
+              background-image:url(img/header-texture.png);
+              background-position:0px 0px;
+              background-repeat:no-repeat;
+              background-attachment:local;}
+              
+  /* Создаем логотип-ссылку */
+  
+  a.logo {display:block;
+          position:relative;
+          width:211px;
+          height:94px;
+          background-image:url(img/logo.png);
+          background-repeat:no-repeat;
+          margin:58px auto;
+          margin-bottom:0;}
+          
+ /* Создаем верхнее меню */
+ 
+ ul.menu {display:block;
+          position:relative;
+          width:390px;
+          height:45px;
+          border-top:3px double #728974;
+          border-bottom:3px double #728974;
+          margin:20px auto;
+          padding:0;
+          }
+                                                                                                          
+ ul.menu li {float:left;
+ padding:0;
+ margin-top:6px;
+margin-right:10px;
+border:0px solid black;
+border-radius:5px;}
+
+ul.menu li:hover, ul.menu li.active {background-image:url(img/pattern-2.png);
+background-repeat:repeat-x;
+background-position:0px 0px;}
+ 
+ul.menu a.menu {display:inline-block;
+            position:relative;
+            width:90px;
+            height:26px;
+            line-height:27px;
+            
+            border:0px solid black;
+            font-family:arial, sans-serif;
+            color:#3b3306;
+            text-transform:uppercase;
+            font-size:10pt;
+            text-align:center;
+            text-decoration:none;
+            border-radius:5px;
+            }
+            
+ ul.menu li:last-child {margin-right:0;}           
+            
+ul.menu li:hover a.menu, ul.menu li.active a.menu {
+                                     -webkit-box-shadow:inset 0px 5px 10px 1px rgba(0, 0, 0, 0.3), 0px 0.5px 0px 0px rgba(30, 30, 30, 0.5);
+                                             box-shadow:inset 0px 5px 10px 1px rgba(0, 0, 0, 0.3), 0px 0.5px 0px 0px rgba(30, 30, 30, 0.5);
+                                    background:-webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.02)), to(rgba(0, 0, 0, 0.32)));
+                                    background:-webkit-linear-gradient(top, rgba(0, 0, 0, 0.02) 0%, rgba(0, 0, 0, 0.32) 100%);
+                                    background:-o-linear-gradient(top, rgba(0, 0, 0, 0.02) 0%, rgba(0, 0, 0, 0.32) 100%);
+                                    background:linear-gradient(to bottom, rgba(0, 0, 0, 0.02) 0%, rgba(0, 0, 0, 0.32) 100%);
+                                    color:#3b3306;}
+                                    
+ul.menu li.active a.menu {color:#fff;}                                     
+                                    
+ul.submenu {display:none;
+          position:absolute;
+          width:170px;
+          height:auto;
+          background-image:url(img/kletka.png);
+          border:1px solid rgba(170, 165, 145, 0.4);
+          -webkit-box-shadow:inset 0px 0px 60px 30px rgba(170, 165, 145, 0.12), 0px 0px 6px 1px rgba(90, 90, 90, 0.1), inset 0px 0px 0px 4px rgba(0, 0, 0, 0.08);
+                                    box-shadow:inset 0px 0px 60px 30px rgba(170, 165, 145, 0.12), 0px 0px 6px 1px rgba(90, 90, 90, 0.1), inset 0px 0px 0px 4px rgba(0, 0, 0, 0.08);
+                                    border-radius:7px;
+                                    padding:5px 7px;}
+                                    
+ul.submenu li {border-bottom:3px double #d2cfc1;
+              padding:5px 0px;
+              margin:0;
+              border-radius:0px;
+              background-image:none !important;}
+              
+ul.submenu li:last-child {border:none;}                                                  
+
+ul.menu li:hover ul.submenu {display:block;
+                          z-index:10;}
+                          
+ul.menu li:hover ul.submenu li a.submenu {display:block;
+                                  position:relative;
+                                background:none;
+                                color:#222;
+                                text-decoration:none;
+                                text-transform:uppercase;
+                                font-family:arial;
+                                font-size:9pt;
+                                width:150px;
+                                padding:7px 0px 7px 7px;
+                                border-radius:5px;
+                                margin:0;
+                                background-image:none !important;}
+                                
+ ul.menu li:hover ul.submenu li a:hover {background-color:rgba(0, 0, 0, 0.1);
+                                        background-image:none !important;}
+ 
+ ul.menu div {cursor:pointer;
+              display:block;
+              position:relative;
+              height:10px;
+              width:100%;
+              top:-20px;
+              border:0px solid black;
+              background-color:transparent;}                                                                                             
+                                    
+                                    
+                                    
+ /* Создаем двухколоночную контентную часть */
+ 
+div.main_content {display:-webkit-box;display:-ms-flexbox;display:flex;
+                  -webkit-box-pack:justify;
+                      -ms-flex-pack:justify;
+                          justify-content:space-between;
+                  -webkit-box-align:stretch;
+                      -ms-flex-align:stretch;
+                          align-items:stretch;
+                  border:0px solid silver;
+                  width:770px;
+                  margin:0 auto;
+                  height:auto;}
+                  
+                  
+ /* Создаем левую колонку  */                  
+                  
+div.main_content div.left {width:470px;
+                            border:0px solid black;
+                            border-radius:10px;
+                            background-color:#fff;
+                            background-image:url(img/kletka.png);
+                            border:1px solid rgba(170, 165, 145, 0.4);
+                            -webkit-box-shadow:inset 0px 0px 60px 30px rgba(170, 165, 145, 0.12), 0px 0px 6px 1px rgba(90, 90, 90, 0.1), inset 0px 0px 0px 4px rgba(0, 0, 0, 0.08);
+                                    box-shadow:inset 0px 0px 60px 30px rgba(170, 165, 145, 0.12), 0px 0px 6px 1px rgba(90, 90, 90, 0.1), inset 0px 0px 0px 4px rgba(0, 0, 0, 0.08);
+                            padding-top:25px;
+                            padding-left:25px;
+                            padding-right:25px;
+                            min-height:800px;
+                            height:auto;}
+                            
+div.main_content div.right {width:300px;
+                            border:0px solid black;}
+                            
+ /* Содержимое левой колонки  */                                                                                                                          
+            
+ h1 {display:inline-block;
+    position:relative;
+    left:-5px;
+    right:5px;
+    text-transform:uppercase;
+    font-family:times, serif;
+    padding-top:0px;
+    margin-top:20px;
+     border:0px solid black;
+    -webkit-transform:scaleX(0.9);
+        -ms-transform:scaleX(0.9);
+            transform:scaleX(0.9);
+    font-size:1.7em;
+    color:#222;}
+    
+
+
+div.portfolio_tags {display:flex;
+                    justify-content:left;
+                    align-items:center;
+                    border:0px solid black;
+                    border-top:3px double #d1cdbf;
+                    border-bottom:3px double #d1cdbf;}
+                    
+a.portfolio_tags {display:inline-block;
+                  
+                  height:20px;
+                  line-height:18px;
+                  padding:0px 10px;
+                  border:1px solid #6a6f52;
+                  border-radius:3px;
+                  font-family:arial;
+                  text-align:center;
+                  font-size:9pt;
+                  text-decoration:none;
+                  background:linear-gradient(to bottom, #969d71, #868e64);
+                  color:#fff;
+                  margin:8px 0px;}
+                  
+a.portfolio_tags {margin-left:10px;}
+
+a.portfolio_tags:first-child {margin-left:0px;}
+
+a.portfolio_tags.active, a.portfolio_tags:hover {background:none;
+                          background-color:#3d402d;
+                          border:1px solid #282a1d;
+                          color:#fff;}
+                          
+                          
+
+div.inline_block {display:inline-block;
+                  border:0px solid black;
+                  border-bottom:3px double #d5d1c4;
+                  padding-bottom:20px;}
+                  
+div.inline_block:nth-child(even) {margin-right:10px;}                  
+
+
+
+div.left img {display:block;
+              position:relative;
+              width:190px;
+              height:80px;
+              background-color:#f3f5e9;
+              border:6px solid #fff;
+              outline:1px solid #9d9a90;
+              margin-top:10px;
+              box-shadow:3px 3px 0px 0px #d5d2c8;} 
+              
+              
+              
+div.inline_block p {font-family:arial;
+                    font-size:9pt;
+                    color:#222;
+                    text-align:left;
+                    width:190px;
+                    margin-top:15px;
+                    }                                                                             
+              
+              
+div.left button.view {display:block;
+                    position:relative;
+                    
+                    margin-top:10px;
+                    width:130px;
+                    height:30px;
+                    background:-webkit-gradient(linear, left top, left bottom, from(#848c62), to(#5a5f43));
+                    background:-webkit-linear-gradient(top, #848c62, #5a5f43);
+                    background:-o-linear-gradient(top, #848c62, #5a5f43);
+                    background:linear-gradient(to bottom, #848c62, #5a5f43);
+                    border:none;
+                    border-radius:3px;
+                    border:1px solid #6a6f52;
+                    font-size:15px;
+                    color:#fff;
+                    font-weight:normal;
+                    -webkit-box-shadow:inset 0px 1px 0px 0px #babfa8;
+                            box-shadow:inset 0px 1px 0px 0px #babfa8;}              
+              
+/* Содержимое правой колонки */
+
+div.right input[type="search"] {display:inline-block;
+                                width:160px;
+                                height:30px;
+                                border:1px solid rgba(0, 0, 0, 0.25);
+                                border-radius:17.5px;
+                                background-color:#c2cab2;
+                                padding-left:30px;
+                                -webkit-box-shadow:inset 0px 0px 5px 1px rgba(30, 30, 30, 0.1), 0px 1px 3px 0px rgba(255, 255, 255, 0.5);
+                                        box-shadow:inset 0px 0px 5px 1px rgba(30, 30, 30, 0.1), 0px 1px 3px 0px rgba(255, 255, 255, 0.5);
+                                margin-left:25px;
+                                font-size:9pt;
+                                color:#68756d;
+                                background-image:url(img/magnifying_glass.png);
+                                background-repeat:no-repeat;
+                                background-position:7px 6px;}
+                                
+div.right button.search {display:inline-block;
+                        width:100px;
+                        height:30px;
+                        border:1px solid rgba(0, 0, 0, 0.25);
+                        border-radius:15px;
+                        background:-webkit-gradient(linear, left top, left bottom, from(#e1e7d5), to(#dae1ca));
+                        background:-webkit-linear-gradient(top, #e1e7d5, #dae1ca);
+                        background:-o-linear-gradient(top, #e1e7d5, #dae1ca);
+                        background:linear-gradient(to bottom, #e1e7d5, #dae1ca);
+                        -webkit-box-shadow:inset 0px 1px 3px 0px rgba(255, 255, 255, 0.9), 0px 1px 3px 0px rgba(30, 30, 30, 0.3);
+                                box-shadow:inset 0px 1px 3px 0px rgba(255, 255, 255, 0.9), 0px 1px 3px 0px rgba(30, 30, 30, 0.3);
+                        margin-left:10px;
+                        color:#66816b;
+                        line-height:30px;}
+                        
+                      
+div.img_container {display:inline-block;
+                  width:130px;
+                  height:130px;
+                  border:1px solid #7e7c74;
+                  background-color:#f3f5e9;
+                  margin-top:20px;
+                  margin-left:25px;
+                  -webkit-box-shadow:inset 0px 0px 0px 5px #f9f9f9;
+                          box-shadow:inset 0px 0px 0px 5px #f9f9f9;}
+                  
+div.img_container:last-child {margin-left:10px;}
+
+a.tags {display:inline-block;
+        padding:0px 12px;
+        height:25px;
+        border:1px solid #aaad97;
+        border-radius:3px;
+        line-height:24px;
+        font-size:8pt;
+        text-decoration:none;
+        color:#66816b;
+        font-family:arial;
+        background:-webkit-gradient(linear, left top, left bottom, from(#eaeddb), to(#e2e6cd));
+        background:-webkit-linear-gradient(top, #eaeddb, #e2e6cd);
+        background:-o-linear-gradient(top, #eaeddb, #e2e6cd);
+        background:linear-gradient(to bottom, #eaeddb, #e2e6cd);
+        -webkit-box-shadow:inset 0px 1px 3px 1px rgba(255, 255, 255, 0.9);
+                box-shadow:inset 0px 1px 3px 1px rgba(255, 255, 255, 0.9);}
+        
+a.active, a.tags:hover {background:-webkit-gradient(linear, left top, left bottom, from(#cbcfb4), to(#b8bca4));background:-webkit-linear-gradient(top, #cbcfb4, #b8bca4);background:-o-linear-gradient(top, #cbcfb4, #b8bca4);background:linear-gradient(to bottom, #cbcfb4, #b8bca4);
+          -webkit-box-shadow:inset 0px 1px 5px 1px rgba(90, 90, 90, 0.3);
+                  box-shadow:inset 0px 1px 5px 1px rgba(90, 90, 90, 0.3);
+          color:#68756d;}
+          
+ div.advert {display:-webkit-box;display:-ms-flexbox;display:flex;
+            position:relative;
+            border:0px solid black;
+            margin-left:25px;
+            margin-top:15px;}
+            
+ div.ad_img_container {width:100px;
+                      height:60px;
+                      border:1px solid #7e7c74;
+                      background-color:#f3f5e9;
+                      -webkit-box-shadow:inset 0px 0px 0px 5px #fff;
+                              box-shadow:inset 0px 0px 0px 5px #fff;}
+                      
+ div.ad_p_container {border:0px dashed silver;
+                    height:60px;
+                    width:200px;
+                    padding-left:10px;
+                    font-family:arial;
+                    font-size:8pt;}
+                    
+ div.ad_p_container p:nth-child(1) {font-size:10pt;                                      
+                                    color:#4a684f;
+                                    margin-bottom:3px;
+                                    margin-top:0px;}
+                                    
+ div.ad_p_container p:nth-child(2), div.ad_p_container p:nth-child(3) {color:#776f56;
+                                                                        margin-top:2px;}
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+
+/* Содержимое футера */
+
+div.footer {background:linear-gradient(to bottom, #dfe3c6, #afc4b8);
+            background-image:url(img/footer-texture.png);
+            background-position:0px 10px;
+            background-repeat:no-repeat;
+            border:0px solid black;}
+            
+div.top_footer {display:flex;
+                justify-content:space-between;
+                align-items:stretch;
+                border:0px solid black;
+                min-height:100px;
+                width:770px;
+                margin:30px auto;
+                padding:0;}
+                
+div.top_footer div {border:0px solid black;
+                    width:192.5px;
+                    padding:0px;}
+                    
+div.top_footer h3 {font-family:times;
+                  font-size:15.5pt;
+                  color:#4f4c25;
+                  border:0px solid black;
+                  text-transform:uppercase;
+                  transform:scaleX(0.9);
+                  margin:0px;
+                  display:block;
+                  width:auto;
+                  padding:0px 0px;
+                  left:0;
+                  margin-left:-10px;
+                  margin-bottom:0px;} 
+                  
+div.top_footer a {display:block;
+                  position:relative;
+                  text-align:left;
+                  background-image:url(img/border-image.png);
+                  background-position:0px 100%;
+                  background-repeat:repeat-x;
+                  padding:0;
+                  font-family:arial;
+                  font-size:9pt;
+                  color:#1c692a;
+                  text-decoration:none;
+                  padding-bottom:12px;
+                  padding-top:8px;}
+                  
+div.top_footer a:hover {text-decoration:underline;}                  
+                  
+ div.pages {margin-left:20px;}
+ 
+ div.top_footer div.latest_tweets a {color:#1c692a;
+                      display:inline-block;
+                      padding:0;
+                      border:none;
+                      text-decoration:none;
+                      border-bottom:1px dotted #1c692a;
+                      background-image:none;
+                      line-height:1.3em;}
+ 
+ div.latest_tweets {color:#3b3306;
+                    text-align:left;
+                    font-size:9pt;
+                    line-height:1.5em;
+                    }
+ 
+ div.latest_tweets h3 {margin-bottom:7px;
+                      margin-top:3px;}
+                      
+ div.latest_tweets p:nth-child(3) {margin-top:15px;}
+ 
+ div.latest_tweets {margin-left:20px;}
+ 
+ div.newsletter input {display:inline-block;
+                                width:105px;
+                                height:25px;
+                                border:1px solid rgba(0, 0, 0, 0.25);
+                                border-radius:17.5px;
+                                background-color:#c2cab2;
+                                padding-left:30px;
+                                -webkit-box-shadow:inset 0px 0px 5px 1px rgba(30, 30, 30, 0.1), 0px 1px 3px 0px rgba(255, 255, 255, 0.5);
+                                        box-shadow:inset 0px 0px 5px 1px rgba(30, 30, 30, 0.1), 0px 1px 3px 0px rgba(255, 255, 255, 0.5);
+                                margin-left:0px;
+                                font-size:9pt;
+                                color:#68756d;
+                                background-image:url(img/newsletter.png);
+                                background-repeat:no-repeat;
+                                background-position:7px 6px;
+                                line-height:15px;}
+                        
+ div.newsletter button {display:inline-block;
+                        width:65px;
+                        height:25px;
+                        border:1px solid rgba(0, 0, 0, 0.25);
+                        border-radius:12.5px;
+                        background:-webkit-gradient(linear, left top, left bottom, from(#e1e7d5), to(#dae1ca));
+                        background:-webkit-linear-gradient(top, #e1e7d5, #dae1ca);
+                        background:-o-linear-gradient(top, #e1e7d5, #dae1ca);
+                        background:linear-gradient(to bottom, #e1e7d5, #dae1ca);
+                        -webkit-box-shadow:inset 0px 1px 3px 0px rgba(255, 255, 255, 0.9), 0px 1px 3px 0px rgba(30, 30, 30, 0.3);
+                                box-shadow:inset 0px 1px 3px 0px rgba(255, 255, 255, 0.9), 0px 1px 3px 0px rgba(30, 30, 30, 0.3);
+                        margin-left:5px;
+                        color:#66816b;
+                        line-height:25px;} 
+                        
+div.newsletter {margin-left:15px;}
+
+div.footer div.top_footer div.social {display:flex;
+                                      width:100%;
+                                      height:32px;
+                                      border:0px solid black;
+                                      margin-top:7px;
+                                      justify-content:space-between;}
+                                      
+div.footer div.top_footer div.social div {width:32px;
+                                          height:32px;
+                                          background-image:url(img/pic_social_1.png);
+                                          background-position:0px 0px;
+                                          background-repeat:no-repeat;
+                                          border-radius:3px;
+                                          box-shadow:0px 0px 3px 1px rgba(30, 30, 30, 0.1);}
+                                                 
+                                                 
+div.footer div.top_footer div.social div:before {content:'';
+                                                display:block;
+                                                position:absolute;
+                                                width:30px;
+                                                height:0px;
+                                                box-shadow:0px -2px 7px 2px rgba(30, 30, 30, 0.5);
+                                                z-index:-1;
+                                                bottom:0;}                                                 
+                                                                                                                                                  
+ 
+   
+div.footer div.bottom_footer {width:770px;
+                              height:40px;
+                              line-height:37px;
+                              border-top:3px double #728974;
+                              margin:auto;
+                              z-index:100;
+                              top:-10px;
+                              font-family:arial;
+                              font-size:9pt;
+                              color:#3b3306;
+                              text-align:center;}
+                              
+div.footer div.bottom_footer a {color:#1c692a;
+                                text-decoration:none;
+                                border-bottom:1px dotted #1c692a;}
+                                
+                                                            
+                                                                                                                                                                                                                                                                                                                  
+
+                                             
+                                                    
+  </style>
+  
+  </head>
+  <body>
+   <div class="content">
+    
+  <!-- Создаем header - шапку сайта -->  
+    
+    <div class="header">
+     <a class="logo" href=""></a>
+     
+ <!-- Создаем верхнее меню -->    
+     
+     <ul class="menu">
+     
+      <li><a class="menu" href="">blog</a></li>
+      <li><a class="menu" href="">about me</a></li>
+      <li class="active"><a class="menu" href="">portfolio</a>
+      <div></div>
+       <ul class="submenu">
+        <li class="submenu"><a class="submenu" href="">justo condimentum</a></li>
+        <li class="submenu"><a class="submenu" href="">Vulputate Lorem</a></li>
+        <li class="submenu"><a class="submenu" href="">Tellus Amet</a></li>
+        <li class="submenu"><a class="submenu" href="">Ridiculus Porta</a></li>
+        <li class="submenu"><a class="submenu" href="">Etiam Pellentesque</a></li>
+       </ul>
+      </li>
+      <li><a class="menu" href="">contact</a></li>
+     </ul>
+         
+    </div>
+  
+  
+  
+  <!-- Создаем двухколоночную контентную часть -->  
+    
+ <div class="main_content">
+ <div class="left">
+  <div class="portfolio_tags">
+   <a class="portfolio_tags active" href="">All</a>
+   <a class="portfolio_tags" href="">Sculptures</a>
+   <a class="portfolio_tags" href="">Paintings</a>
+   <a class="portfolio_tags" href="">Architecture</a>
+  </div>
+  
+ <div class="inline_block" style="margin-right:30px;"> 
+  <h1>David</h1>
+  <img src="" alt="" title="">
+  <p>Aenean lacinia bibendum nulla sed consectetur...</p>
+  <button class="view">View</button>
+</div>
+
+<div class="inline_block" style="margin:0;"> 
+  <h1>Pieta</h1>
+  <img src="" alt="" title="">
+  <p>Aenean lacinia bibendum nulla sed consectetur...</p>
+  <button class="view">View</button>
+</div>
+
+<div class="inline_block"> 
+  <h1 style="margin-left:-15px; padding-left:0; transform:scaleX(0.85);">Sistine Chapel</h1>
+  <img src="" alt="" title="">
+  <p>Aenean lacinia bibendum nulla sed consectetur...</p>
+  <button class="view">View</button>
+</div>
+
+<div class="inline_block"> 
+  <h1>Pieta</h1>
+  <img src="" alt="" title="">
+  <p>Aenean lacinia bibendum nulla sed consectetur...</p>
+  <button class="view">View</button>
+</div>
+
+<div class="inline_block" style="margin-right:25px;"> 
+  <h1 style="margin-left:-5px;">Laurentian</h1>
+  <img src="" alt="" title="">
+  <p>Aenean lacinia bibendum nulla sed consectetur...</p>
+  <button class="view">View</button>
+</div>
+
+<div class="inline_block"> 
+  <h1 style="margin-left:-5px;">Campidoglio</h1>
+  <img src="" alt="" title="">
+  <p>Aenean lacinia bibendum nulla sed consectetur...</p>
+  <button class="view">View</button>
+</div>  
+    
+ </div>
+ 
+ <div class="right">
+  <input type="search" value="Type and search" onclick="this.value=''; this.style.color='#000'"><button class="search">Search</button>
+<div> 
+ <div class="img_container"></div>
+ <div class="img_container"></div>
+</div> 
+ 
+<div style="border:0px solid black; margin-left:25px; margin-top:30px;"> <a class="tags active" href="">Popular</a>
+ <a class="tags" href="">Recent</a>
+ <a class="tags" href="">Comments</a>
+ <a class="tags" href="">Tags</a></div>
+ 
+ <div class="advert">
+ <div class="ad_img_container"></div>
+ <div class="ad_p_container">
+   <p>How to draw a human body</p>
+   <p>May 20, 2011</p>
+   <p>Tutorials</p>
+ </div> 
+ </div>
+ 
+ <div class="advert">
+ <div class="ad_img_container"></div>
+ <div class="ad_p_container">
+   <p>The Creation of Adam</p>
+   <p>May 21, 2011</p>
+   <p>Reviews</p>
+ </div> 
+ </div>
+ 
+ <div class="advert">
+ <div class="ad_img_container"></div>
+ <div class="ad_p_container">
+   <p>What defines a genius</p>
+   <p>May 18, 2011</p>
+   <p>Thouhts</p>
+ </div> 
+ </div>
+ 
+ <div class="advert">
+ <div class="ad_img_container"></div>
+ <div class="ad_p_container">
+   <p>Classic Art in The St. Peter’s Basilica</p>
+   <p>May 17, 2011</p>
+   <p>Off topic</p>
+ </div> 
+ </div>
+ 
+ </div>   
+    
+    
+   </div>
+    </div>
+   
+   <div class="footer">
+     <div class="top_footer">
+      <div class="all_categories">
+       <h3>All categories</h3>
+       <a href="">Reviews</a>
+       <a href="">Classics</a>
+       <a href="">Thoughts</a>
+       <a href="">Tutorials</a>
+       <a href="">Off Topic</a>
+      </div>
+      <div class="pages">
+       <h3>Pages</h3>
+       <a href="">Blog</a>
+       <a href="">About me</a>
+       <a href="">Portfolio</a>
+       <a href="">Contact</a>
+
+      </div>
+      <div class="latest_tweets">
+        <h3>Latest tweets</h3>
+        <p><a href="">about 3 minutes ago</a> Checkout this great <a href="">#themeforest</a> item ‘Angelo - PSD Template’ <a href="">themeforest.net/ite...</a></p>
+        <p><a href=""> 1 hour ago</a> Cras mattis consec tetur purus sit amet fermentum? :)</p>
+      </div>
+      <div class="newsletter">
+        <input type="search" value="Your email" onclick="this.value=''; this.style.color='#000'"><button>Add</button>
+       <h3 style="margin-top:40px;">Get social</h3>
+       <div class="social">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+       </div>
+      </div>
+      </div>
+             <div class="bottom_footer">
+      © Copyright 2011 - Angelo WordPress Theme. All rights reserved. Designed and developed by <a href="">Meydjer Luzzoli</a>
+     </div>    
+
+     </div>
+     
+
+     
+
+  </body>
+</html>
